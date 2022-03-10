@@ -22,13 +22,6 @@
         android:gravity="center_vertical"
         android:padding="16dp">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="10dp"
-            android:id="@+id/backtoprofile"
-            android:src="@drawable/ic_arrow_back_24dp" />
-
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Profile"
+            android:text="Dashboard"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -46,27 +39,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
-        <RelativeLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_centerInParent="true"
-                android:padding="6dp"
-                android:src="@drawable/ic_notifications_white_24dp" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:padding="4dp"
-                android:src="@drawable/circleyellowfil" />
-        </RelativeLayout>
 
     </LinearLayout>
 
@@ -85,6 +57,7 @@
             android:paddingRight="20dp">
 
             <!--Top Profile Section -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -221,152 +194,170 @@
 
                 <!--Skills Details-->
                 <LinearLayout
+                    android:id="@+id/personalinfo"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/circularbordersolid_grey"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                    <!--About Me Card-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/goals"
-                            android:textColor="@color/white"
-                            android:textSize="17sp"
-                            android:textStyle="bold" />
+                    <!--Contact Details-->
 
-                        <Space
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-
-
-                        <TextView
-                            android:id="@+id/save_weekly"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Save"
-                            android:textColor="#FFCF66"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
+                    <!--Skills Details-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:orientation="vertical">
+                        android:background="@drawable/circularbordersolid_grey"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/bottom_select"
-                            android:drawableBottom="@android:color/white"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="50dp"
-                                android:background="@color/lightPrimary"
-                                android:padding="5dp" />
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:fontFamily="@font/proximanovaregular"
-                                android:text="@string/calories"
+                                android:text="Last Week Activity"
                                 android:textColor="@color/white"
-                                android:textSize="15sp" />
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/calorie_edit"
+                            <Space
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="90dp"
-                                android:fontFamily="@font/proximanovaregular"
-                                android:text="@string/calories_val"
-                                android:textColor="@color/lightPrimarySub"
-                                android:textSize="15sp" />
+                                android:layout_weight="1" />
+
+
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/bottom_select"
-                            android:drawableBottom="@android:color/white"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="50dp"
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bottom_select"
+                                android:drawableBottom="@android:color/white"
+                                android:gravity="center_vertical"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/lightPrimary"
+                                    android:padding="5dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:text="@string/calories"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/calorie_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="90dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:text="@string/calories_val"
+                                    android:textColor="@color/lightPrimarySub"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bottom_select"
+                                android:drawableBottom="@android:color/white"
+                                android:gravity="center_vertical"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/lightPrimary"
+                                    android:padding="5dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:text="@string/time"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/time_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="120dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:text="400min"
+                                    android:textColor="@color/lightPrimarySub"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="2dp"
                                 android:background="@color/lightPrimary"
-                                android:padding="5dp" />
+                                android:gravity="center_vertical"
+                                android:paddingRight="8dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:fontFamily="@font/proximanovaregular"
-                                android:text="@string/time"
-                                android:textColor="@color/white"
-                                android:textSize="15sp" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="50dp"
+                                    android:background="@color/lightPrimary"
+                                    android:padding="5dp" />
 
-                            <EditText
-                                android:id="@+id/time_edit"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="120dp"
-                                android:fontFamily="@font/proximanovaregular"
-                                android:text="@string/time_val"
-                                android:textColor="@color/lightPrimarySub"
-                                android:textSize="15sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:text="Recent"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/distance_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="95dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:text="Biking;Running;Rowing"
+                                    android:textColor="@color/lightPrimarySub"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="2dp"
-                            android:background="@color/lightPrimary"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="50dp"
-                                android:background="@color/lightPrimary"
-                                android:padding="5dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:fontFamily="@font/proximanovaregular"
-                                android:text="@string/distance"
-                                android:textColor="@color/white"
-                                android:textSize="15sp" />
-
-                            <EditText
-                                android:id="@+id/distance_edit"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="95dp"
-                                android:fontFamily="@font/proximanovaregular"
-                                android:text="@string/distance_val"
-                                android:textColor="@color/lightPrimarySub"
-                                android:textSize="15sp" />
-                        </LinearLayout>
-
                     </LinearLayout>
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_act"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activity" />
+
+                <Button
+                    android:id="@+id/button_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="setting" />
+
             </LinearLayout>
 
             <!--Experience Bottom Cards-->
