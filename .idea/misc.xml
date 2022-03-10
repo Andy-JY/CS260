@@ -9,10 +9,10 @@
         <entry key="app/src/main/res/drawable-v24/circularbordersolid2.xml" value="0.17" />
         <entry key="app/src/main/res/drawable-v24/circularbordersolid_new.xml" value="0.17" />
         <entry key="app/src/main/res/drawable/bottom_select.xml" value="0.17" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15489130434782608" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3439635535307517" />
         <entry key="app/src/main/res/layout/dashboard.xml" value="0.21422101449275363" />
         <entry key="app/src/main/res/layout/mainactivity.xml" value="0.15489130434782608" />
-        <entry key="app/src/main/res/layout/profile_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/profile_main.xml" value="0.2738052368164063" />
         <entry key="app/src/main/res/layout/profile_main_edit.xml" value="0.1609375" />
         <entry key="app/src/main/res/layout/profile_main_edit_info.xml" value="0.165" />
         <entry key="app/src/main/res/layout/profile_main_edit_weekly_goal.xml" value="0.25159149169921874" />

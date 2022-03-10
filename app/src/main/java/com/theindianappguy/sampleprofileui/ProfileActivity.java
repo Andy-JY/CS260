@@ -10,17 +10,19 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Button;
+import android.widget.ImageView;
 
 public class ProfileActivity extends AppCompatActivity {
 
     LinearLayout personalinfo;
     TextView personalinfobtn, weeklybtn;
-
+    ImageView back_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_main);
-
+        back_button = findViewById(R.id.back);
         personalinfo = findViewById(R.id.personalinfo);
         personalinfobtn = findViewById(R.id.editinfo);
         weeklybtn = findViewById(R.id.editweekly);
@@ -75,6 +77,14 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(ProfileActivity.this, EditWeekly.class);
+                ProfileActivity.this.startActivity(myIntent);
+            }
+        });
+
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(ProfileActivity.this, MainActivity.class);
                 ProfileActivity.this.startActivity(myIntent);
             }
         });
